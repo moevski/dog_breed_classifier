@@ -7,11 +7,20 @@
 
 ## Project Overview
 
-Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
+
+This is about how to build an Identification App to detect the presence of a human face or a dog in an image, then classify the dog breed using Convolutional Neural Network (CNN) in case a dog is detected or suggest the most dog breed that resembles the human face in case human face is detected.
+
+The strategy to tackle this problem is summarized in four steps:
+
+1- Identify presence of human face in an image
+2- Identify the presence of a dog in an image
+3- Classify a dog breed for dogs or suggest a dog breed that resembles the human face
+4- Build the algorithm
+
 
 ![Sample Output][image1]
 
-Along with exploring state-of-the-art CNN models for classification, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
+
 
 ## Project Instructions
 
@@ -19,7 +28,7 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 
 1. Clone the repository and navigate to the downloaded folder.
 ```	
-git clone https://github.com/udacity/dog-project.git
+git clone https://github.com/moevski/dog_breed_classifier.git
 cd dog-project
 ```
 
@@ -102,15 +111,13 @@ jupyter notebook dog_app.ipynb
 
 __NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
 
-## Evaluation
+## Summary
 
-Your project will be reviewed by a Udacity reviewer against the CNN project [rubric](https://review.udacity.com/#!/rubrics/810/view).  Review this rubric thoroughly, and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
+This Project described an algorithm that detect 2 objects, human faces and dogs, in case a dog is detected it classify it’s breed, in case it’s human it classify the most resembling dog breed for the detected human face.
+Human face detector was build based on pret-rained Haar feature-based cascade classifiers OpenCV model, dog detector was based on pre-trained ResNet50 CNN pre-trained model, and finally image classifier was based on InceptionV3 CNN model, I also tried to build a simple custom model as a base line. the result from the simple custom model was 4.5% accuracy which is not that bad considering the complexity of the problem and simplicity of network architecture, however, this increase to over 81% using InceptionV3 model.
 
-## Project Submission
 
-When you are ready to submit your project, collect the following files and compress them into a single archive for upload:
-- The `dog_app.ipynb` file with fully functional code, all code cells executed and displaying output, and all questions answered.
-- An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.
-- Any additional images used for the project that were not supplied to you for the project. __Please do not include the project data sets in the `dogImages/` or `lfw/` folders.  Likewise, please do not include the `bottleneck_features/` folder.__
 
-Alternatively, your submission could consist of the GitHub link to your repository.
+## Link to My Blog Post
+
+[Full Blog Post](https://moevski.medium.com/building-a-dog-identification-app-using-cnn-5c33d25d1a1f)
