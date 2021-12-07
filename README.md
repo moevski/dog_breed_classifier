@@ -29,9 +29,7 @@ The strategy to tackle this problem is summarized in four steps:
 - Build the algorithm
 
 ### Sample output
-![Sample Output][image1]
-![Sample Output][image2]
-
+![Sample Output][image1] ![Sample Output][image2]
 
 ## Project Instructions<a name="proj_inst"></a>
 
