@@ -28,11 +28,10 @@ The strategy to tackle this problem is summarized in four steps:
 - Classify a dog breed for dogs or suggest a dog breed that resembles the human face
 - Build the algorithm
 
-
+### Sample output
 ![Sample Output][image1]
-
-
 ![Sample Output][image2]
+
 
 ## Project Instructions<a name="proj_inst"></a>
 
