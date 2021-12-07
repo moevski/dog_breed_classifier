@@ -1,8 +1,8 @@
 [//]: # (Image References)
 
-[image1]: ./images/sample_dog_output.png "Sample Output"
-[image2]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
-[image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
+[image1]: ./images/1.png "Sample Output"
+[image2]: ./images/2.png "VGG-16 Model Keras Layers"
+
 
 # Building a Dog Identification App using CNN
 
@@ -32,6 +32,7 @@ The strategy to tackle this problem is summarized in four steps:
 ![Sample Output][image1]
 
 
+![Sample Output][image2]
 
 ## Project Instructions<a name="proj_inst"></a>
 
